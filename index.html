@@ -56,32 +56,22 @@
 	  .pitch{
 		padding: 2.5% 0%;
 	  }
-	  .video {
-		text-align: center;
-      }
+
 	  .actions{
 		background-color: #343434;
 		padding: 3% 0%;
 	  }
-	  .statistics{
+	  
+	  .statistics, .video, .thermometer{
 		text-align: center;
 	  }
+	  
 	  .statistics h3, .statistics p{
 		color: white;
 	  }  
 	  
       .faq, .footer {
         padding: 10px 0px 10px 0px;
-      }
-      .thermometer, .order, .social {
-        border: 1px dotted;
-        text-align: center;
-      }
-
-      .thermometer, .order, .social {
-        /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
-        height: 40px;
-        line-height: 40px;
       }
 
     </style>
@@ -146,6 +136,14 @@
 						<h3>10</h3> <p>days left</p>
 						</div>
 					</div>
+				</div>
+			</div>
+			<div class="span10 offset1">
+				<!-- bootstrap progress bar -->
+				<!-- http://twitter.github.io/bootstrap/components.html#progress-->
+				<div class="thermometer active progress">
+				  <div class="bar bar-success" style="width: 60%;"></div>
+				  <div class="bar bar-warning" style="width: 40%;"></div>
 				</div>
 			</div>
 		</div>
